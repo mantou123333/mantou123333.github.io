@@ -196,7 +196,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2023-04-23 14:39:02 / 修改时间：16:00:10" itemprop="dateCreated datePublished" datetime="2023-04-23T14:39:02+08:00">2023-04-23</time>
+              <time title="创建时间：2023-04-23 14:39:02 / 修改时间：16:08:41" itemprop="dateCreated datePublished" datetime="2023-04-23T14:39:02+08:00">2023-04-23</time>
             </span>
 
           <br>
@@ -224,7 +224,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="原型继承的几种方式"><a href="#原型继承的几种方式" class="headerlink" title="原型继承的几种方式"></a>原型继承的几种方式</h1><h2 id="1-原型链继承"><a href="#1-原型链继承" class="headerlink" title="1. 原型链继承"></a>1. 原型链继承</h2><p>💡 <strong>方式：</strong>将构造函数的实例赋值给原型对象</p>
+          <p>title: 原型继承的几种方式</p>
+<h1 id="原型继承的几种方式"><a href="#原型继承的几种方式" class="headerlink" title="原型继承的几种方式"></a>原型继承的几种方式</h1><h2 id="1-原型链继承"><a href="#1-原型链继承" class="headerlink" title="1. 原型链继承"></a>1. 原型链继承</h2><p>💡 <strong>方式：</strong>将构造函数的实例赋值给原型对象</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;xuxiaotong&quot;</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">color</span> = [<span class="string">&quot;red&quot;</span>,<span class="string">&quot;green&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 子类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = <span class="string">&quot;21&quot;</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 原型链继承</span></span><br><span class="line">subf.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> superf();<span class="comment">//subf继承了superf，通过原型，形成链条</span></span><br><span class="line"><span class="comment">// 子类实例</span></span><br><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">__proto__</span>.<span class="property">__proto__</span> === superf.<span class="property"><span class="keyword">prototype</span></span>) <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</strong></p>
