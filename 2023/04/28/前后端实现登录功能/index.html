@@ -22,30 +22,35 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="冲冲冲">
-<meta property="og:type" content="website">
-<meta property="og:title" content="三冬四夏">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="登录注册的前后端实现（vue + express + Mysql ）1. 安装 Mysql 并创建一个保存用户数据的表 安装 Mysql：(59条消息) mysql数据库安装（详细）_mysql安装_体会！的博客-CSDN博客  安装 navicat：Navicat Premium 16 永久破解激活 - 酷酷的阿杰 - 博客园 (cnblogs.com)  启动 Mysql：(59条消息) Ex">
+<meta property="og:type" content="article">
+<meta property="og:title" content="登录注册的前后端实现（vue + express + Mysql ）">
+<meta property="og:url" content="http://example.com/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/index.html">
 <meta property="og:site_name" content="三冬四夏">
-<meta property="og:description" content="冲冲冲">
+<meta property="og:description" content="登录注册的前后端实现（vue + express + Mysql ）1. 安装 Mysql 并创建一个保存用户数据的表 安装 Mysql：(59条消息) mysql数据库安装（详细）_mysql安装_体会！的博客-CSDN博客  安装 navicat：Navicat Premium 16 永久破解激活 - 酷酷的阿杰 - 博客园 (cnblogs.com)  启动 Mysql：(59条消息) Ex">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s2.loli.net/2023/04/25/8tEViwgNSKbFjZB.png">
+<meta property="article:published_time" content="2023-04-28T13:33:35.000Z">
+<meta property="article:modified_time" content="2023-04-28T13:36:27.560Z">
 <meta property="article:author" content="一二三三三三">
+<meta property="article:tag" content="vue、nodejs、Mysql">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2023/04/25/8tEViwgNSKbFjZB.png">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>三冬四夏</title>
+  <title>登录注册的前后端实现（vue + express + Mysql ） | 三冬四夏</title>
   
 
 
@@ -165,9 +170,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -183,10 +189,9 @@
       <meta itemprop="name" content="三冬四夏">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">登录注册的前后端实现（vue + express + Mysql ）</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          登录注册的前后端实现（vue + express + Mysql ）
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -208,7 +213,14 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -233,7 +245,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="登录注册的前后端实现（vue-express-Mysql-）"><a href="#登录注册的前后端实现（vue-express-Mysql-）" class="headerlink" title="登录注册的前后端实现（vue + express + Mysql ）"></a>登录注册的前后端实现（vue + express + Mysql ）</h1><h2 id="1-安装-Mysql-并创建一个保存用户数据的表"><a href="#1-安装-Mysql-并创建一个保存用户数据的表" class="headerlink" title="1. 安装 Mysql 并创建一个保存用户数据的表"></a>1. 安装 Mysql 并创建一个保存用户数据的表</h2><ol>
+        <h1 id="登录注册的前后端实现（vue-express-Mysql-）"><a href="#登录注册的前后端实现（vue-express-Mysql-）" class="headerlink" title="登录注册的前后端实现（vue + express + Mysql ）"></a>登录注册的前后端实现（vue + express + Mysql ）</h1><h2 id="1-安装-Mysql-并创建一个保存用户数据的表"><a href="#1-安装-Mysql-并创建一个保存用户数据的表" class="headerlink" title="1. 安装 Mysql 并创建一个保存用户数据的表"></a>1. 安装 Mysql 并创建一个保存用户数据的表</h2><ol>
 <li><p><strong>安装 Mysql：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43605266/article/details/110477391">(59条消息) mysql数据库安装（详细）_mysql安装_体会！的博客-CSDN博客</a></p>
 </li>
 <li><p><strong>安装 navicat：</strong><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kkdaj/p/16260681.html">Navicat Premium 16 永久破解激活 - 酷酷的阿杰 - 博客园 (cnblogs.com)</a></p>
@@ -313,7 +325,6 @@
 </ol>
 <p>待完善：人类行为验证……</p>
 
-      
     </div>
 
     
@@ -321,191 +332,83 @@
     
 
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+      <div>
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      </div>
+    
+        
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/23/%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF/">
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>一二三三三三
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/" title="登录注册的前后端实现（vue + express + Mysql ）">http://example.com/2023/04/28/前后端实现登录功能/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/Icon.png">
-      <meta itemprop="name" content="一二三三三三">
-      <meta itemprop="description" content="冲冲冲">
-    </span>
+        
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="三冬四夏">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/04/23/%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF/" class="post-title-link" itemprop="url">原型继承</a>
-        </h2>
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
+    <div class="social-list">
 
-              <time title="创建时间：2023-04-23 16:27:18 / 修改时间：16:37:26" itemprop="dateCreated datePublished" datetime="2023-04-23T16:27:18+08:00">2023-04-23</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
-                </span>
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
             </span>
 
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
+            <span class="label">RSS</span>
+          </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-原型链继承"><a href="#1-原型链继承" class="headerlink" title="1. 原型链继承"></a>1. 原型链继承</h2><p>💡 <strong>方式：</strong>将构造函数的实例赋值给原型对象</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;xuxiaotong&quot;</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">color</span> = [<span class="string">&quot;red&quot;</span>,<span class="string">&quot;green&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 子类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = <span class="string">&quot;21&quot;</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 原型链继承</span></span><br><span class="line">subf.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> superf();<span class="comment">//subf继承了superf，通过原型，形成链条</span></span><br><span class="line"><span class="comment">// 子类实例</span></span><br><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">__proto__</span>.<span class="property">__proto__</span> === superf.<span class="property"><span class="keyword">prototype</span></span>) <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="title function_">isPrototypeOf</span>(test))  <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test <span class="keyword">instanceof</span> superf) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<p>❌ <strong>存在问题：</strong></p>
-<ol>
-<li><p><strong>引用共享：</strong>原型中包含的所有引用值会在所有实例间共享</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="property">color</span>.<span class="title function_">push</span>(<span class="string">&quot;balck&quot;</span>)</span><br><span class="line"><span class="keyword">var</span> test1 = <span class="keyword">new</span> <span class="title function_">subf</span>()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test1.<span class="property">color</span>) <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;, &#x27;balck&#x27; ] </span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>超类无法传参：</strong>子类在实例化时不能给父类的构造函数传参，无法在不影响所有对象实例的情况下把参数传进父类的构造函数中</p>
-</li>
-</ol>
-<h2 id="2-盗用构造函数"><a href="#2-盗用构造函数" class="headerlink" title="2. 盗用构造函数"></a>2. 盗用构造函数</h2><p>💡 <strong>方式：</strong>在子类构造函数中调用父类的构造函数，使用 <code>apply()</code>、<code>call()</code> 方法以新创建的对象为上下文执行构造函数</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">color</span> = [<span class="string">&quot;red&quot;</span>,<span class="string">&quot;green&quot;</span>]</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">sayColor</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">color</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 父类原型上的方法</span></span><br><span class="line">superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayName</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 子类</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params">name, age</span>) &#123;</span><br><span class="line">    superf.<span class="title function_">call</span>(<span class="variable language_">this</span>, name) <span class="comment">// 盗用构造函数</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>✅ <strong>优点：</strong></p>
-<ol>
-<li><p><strong>在子类实例化时可以向父类构造函数传参</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">age</span>)  <span class="comment">// 23</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">name</span>)  <span class="comment">// Tom</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><strong>没有引用共享的问题：</strong> <code>superf.call(this, name)</code> 为子类的实例创建的新对象的上下文执行父类的初始化代码，每个实例都有自己的 color 属性</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="property">color</span>.<span class="title function_">push</span>(<span class="string">&quot;balck&quot;</span>)</span><br><span class="line"><span class="keyword">var</span> test1 = <span class="keyword">new</span> <span class="title function_">subf</span>()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test1.<span class="property">color</span>) <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;] </span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>❌ <strong>存在问题：</strong></p>
-<ol>
-<li>必须在构造函数中定义方法，通过父类原型定义的方法无法被子类访问到，无法复用</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="title function_">sayColor</span>()   <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;, &#x27;balck&#x27; ]</span></span><br><span class="line">test1.<span class="title function_">sayColor</span>()  <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;] </span></span><br><span class="line"><span class="comment">// console.log(test.sayName())  // 子类实例对象调用父类原型上的方法报错</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-组合继承"><a href="#3-组合继承" class="headerlink" title="3. 组合继承"></a>3. 组合继承</h2><p>💡 <strong>方式：</strong></p>
-<ol>
-<li>在子类构造函数中调用父类的构造函数</li>
-<li>把父类的实例对象赋值给子类的原型对象</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>= name</span><br><span class="line">&#125;</span><br><span class="line">superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 盗用构造函数继承父类构造函数上的属性和方法</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params">name,age</span>) &#123;</span><br><span class="line">    superf.<span class="title function_">call</span>(<span class="variable language_">this</span>, name)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 使用原型链继承父类原型上的属性和方法</span></span><br><span class="line">subf.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> superf()</span><br><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="title function_">getName</span>()) <span class="comment">// Tom</span></span><br></pre></td></tr></table></figure>
-
-<p>弥补了原型链继承和盗用构造函数的不足</p>
-<p><strong>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="title function_">isPrototypeOf</span>(test))  <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test <span class="keyword">instanceof</span> superf) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<p>❌ <strong>存在问题：</strong>调用了两次父类构造函数，存在效率问题</p>
-<h2 id="4-原型式继承"><a href="#4-原型式继承" class="headerlink" title="4. 原型式继承"></a>4. 原型式继承</h2><p>💡 <strong>方式：</strong></p>
-<ol>
-<li>创建一个临时构造函数</li>
-<li>将传入的对象赋值给这个构造函数的原型</li>
-<li>返回临时构造函数的一个实例</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">obj</span>(<span class="params">o</span>) &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">F</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line">    F.<span class="property"><span class="keyword">prototype</span></span> = o</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title function_">F</span>()</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Tom&quot;</span>,</span><br><span class="line">    <span class="attr">hobby</span>: [<span class="string">&quot;sing&quot;</span>, <span class="string">&quot;dance&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person1 = <span class="title function_">obj</span>(person)</span><br><span class="line">person1.<span class="property">name</span> = <span class="string">&quot;Ami&quot;</span></span><br><span class="line">person1.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;swim&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> person2 = <span class="title function_">obj</span>(person)</span><br><span class="line">person2.<span class="property">name</span> = <span class="string">&quot;John&quot;</span></span><br><span class="line">person2.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;read&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>)  <span class="comment">// Tom</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">name</span>) <span class="comment">// Ami</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">name</span>) <span class="comment">// John</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">hobby</span>) <span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>es5 通过 增加 <code>Object.create(obj[, &#123;新增的属性&#125;])</code> 方法将原型式继承的概念规范化了。</strong></p>
-<ol>
-<li><p>当只有一个参数时，<code>Object.create()</code> 跟 <code>obj()</code> 方法的效果相同</p>
-</li>
-<li><p><code>Object.create()</code> 第二个参数新增的属性会遮蔽原型上的同名属性</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person3 = <span class="title class_">Object</span>.<span class="title function_">create</span>(person, &#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;<span class="attr">value</span>:<span class="string">&quot;Samu&quot;</span>&#125;,</span><br><span class="line">&#125;)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person3.<span class="property">name</span>) <span class="comment">// Samu</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>✅ <strong>使用场景：</strong>有一个对象，想在已有对象的基础上创建一个新的对象</p>
-<p>❌ <strong>存在问题：</strong>引用共享问题，属性中包含的引用值始终会在相关对象空间中共享</p>
-<h2 id="5-寄生式继承"><a href="#5-寄生式继承" class="headerlink" title="5. 寄生式继承"></a>5. 寄生式继承</h2><p>💡 <strong>方式：</strong>创建一个实现继承的函数，以某种方式增强对象，然后返回对象</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">createAnother</span>(<span class="params">original</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> clone = <span class="title class_">Object</span>(original)  <span class="comment">// 1.调用函数创建一个新的对象</span></span><br><span class="line">    clone.<span class="property">sayHi</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;  <span class="comment">// 2. 增强对象</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hi&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> clone</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Tom&quot;</span>,</span><br><span class="line">    <span class="attr">hobby</span>: [<span class="string">&quot;sing&quot;</span>, <span class="string">&quot;dance&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person1 = <span class="title function_">createAnother</span>(person)</span><br><span class="line">person1.<span class="title function_">sayHi</span>()  <span class="comment">// Hi</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：</strong>这里调用函数创建一个新的对象不一定要通过 <code>Object(original)</code>，其他返回新对象的函数都可以</p>
-<p>✅ <strong>使用场景：</strong>适合主要关注对象，不在乎类型、构造函数的场景</p>
-<p>❌ <strong>存在问题：</strong></p>
-<ol>
-<li><p>引用共享</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person2 = <span class="title function_">createAnother</span>(person)</span><br><span class="line">person1.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;swim&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;]</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>复用问题</p>
-</li>
-</ol>
-<h2 id="6-寄生式组合继承"><a href="#6-寄生式组合继承" class="headerlink" title="6. 寄生式组合继承"></a>6. 寄生式组合继承</h2><p>💡 <strong>方式：</strong></p>
-<ol>
-<li>盗用构造函数继承属性</li>
-<li>寄生式继承父类原型</li>
-<li>让返回的新对象赋值给子类的原型</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">SuperType</span>(<span class="params">name</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">colors</span> = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">SuperType</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayName</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">SubType</span>(<span class="params">name, age</span>)&#123;</span><br><span class="line">    <span class="title class_">SuperType</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>, name);  <span class="comment">//1. 盗用构造函数继承属性</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">inheritPrototype</span>(<span class="params">subType, superType</span>)&#123;</span><br><span class="line">    <span class="comment">// 2. 寄生式继承父类原型</span></span><br><span class="line">    <span class="keyword">var</span> prototype = <span class="title class_">Object</span>(superType.<span class="property"><span class="keyword">prototype</span></span>); <span class="comment">// 创建父类原型的副本</span></span><br><span class="line">    prototype.<span class="property">constructor</span> = subType; <span class="comment">// 让副本的 constructor 属性指向子类</span></span><br><span class="line">    subType.<span class="property"><span class="keyword">prototype</span></span> = prototype; <span class="comment">// 让子类原型指向副本</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">inheritPrototype</span>(<span class="title class_">SubType</span>, <span class="title class_">SuperType</span>);<span class="comment">//实现继承</span></span><br><span class="line"><span class="title class_">SubType</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayAge</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">age</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> test = <span class="keyword">new</span> <span class="title class_">SubType</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line">test.<span class="title function_">sayName</span>()  <span class="comment">// Tom </span></span><br></pre></td></tr></table></figure>
-
-<p>✅ <strong>优点：</strong></p>
-<ol>
-<li>解决了组合式继承两次调用构造函数的问题</li>
-<li>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</li>
-</ol>
-<p>✅ <strong>使用场景：</strong>引用类型继承的最佳模式</p>
-
-      
     </div>
+  </div>
 
-    
-    
-    
 
-    
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/vue%E3%80%81nodejs%E3%80%81Mysql/" rel="tag"># vue、nodejs、Mysql</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/04/23/%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF/" rel="prev" title="原型继承">
+      <i class="fa fa-chevron-left"></i> 原型继承
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81ODM5My8zNDg1Ng=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -552,6 +455,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E7%9A%84%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%EF%BC%88vue-express-Mysql-%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">登录注册的前后端实现（vue + express + Mysql ）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85-Mysql-%E5%B9%B6%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BF%9D%E5%AD%98%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E7%9A%84%E8%A1%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1. 安装 Mysql 并创建一个保存用户数据的表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Vue-%E4%B8%AD%E5%AE%9E%E7%8E%B0-token-%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"><span class="nav-number">1.2.</span> <span class="nav-text">2. Vue 中实现 token 用户登录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-express-%E5%90%8E%E7%AB%AF%E9%85%8D%E7%BD%AE"><span class="nav-number">1.3.</span> <span class="nav-text">3. express 后端配置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -727,6 +631,21 @@ $(document).ready(function() {
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
