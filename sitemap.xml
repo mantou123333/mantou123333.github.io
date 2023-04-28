@@ -65,6 +65,13 @@
 
   
   <url>
+    <loc>http://example.com/tags/js/</loc>
+    <lastmod>2023-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/tags/vue/</loc>
     <lastmod>2023-04-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -85,13 +92,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://example.com/tags/js/</loc>
-    <lastmod>2023-04-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -102,14 +102,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/js/nodejs/</loc>
-    <lastmod>2023-04-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/js/nodejs/Mysql/</loc>
+    <loc>http://example.com/categories/vue-nodejs-Mysql/</loc>
     <lastmod>2023-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
