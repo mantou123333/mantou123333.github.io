@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="冲冲冲">
+<meta property="og:type" content="website">
+<meta property="og:title" content="三冬四夏">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="三冬四夏">
+<meta property="og:description" content="冲冲冲">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="一二三三三三">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>三冬四夏</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/rss2.xml" title="三冬四夏" type="application/rss+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+      <a target="_blank" rel="noopener" href="https://github.com/mantou123333" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">三冬四夏</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="download fa-fw"></i>资源</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Icon.png">
+      <meta itemprop="name" content="一二三三三三">
+      <meta itemprop="description" content="冲冲冲">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="三冬四夏">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/28/%E5%89%8D%E5%90%8E%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">登录注册的前后端实现（vue + express + Mysql ）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-04-28 21:33:35 / 修改时间：21:46:13" itemprop="dateCreated datePublished" datetime="2023-04-28T21:33:35+08:00">2023-04-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue/" itemprop="url" rel="index"><span itemprop="name">vue</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/nodejs/" itemprop="url" rel="index"><span itemprop="name">nodejs</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mysql/" itemprop="url" rel="index"><span itemprop="name">Mysql</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>16k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>14 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="登录注册的前后端实现（vue-express-Mysql-）"><a href="#登录注册的前后端实现（vue-express-Mysql-）" class="headerlink" title="登录注册的前后端实现（vue + express + Mysql ）"></a>登录注册的前后端实现（vue + express + Mysql ）</h1><h2 id="1-安装-Mysql-并创建一个保存用户数据的表"><a href="#1-安装-Mysql-并创建一个保存用户数据的表" class="headerlink" title="1. 安装 Mysql 并创建一个保存用户数据的表"></a>1. 安装 Mysql 并创建一个保存用户数据的表</h2><ol>
+<li><p><strong>安装 Mysql：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_43605266/article/details/110477391">(59条消息) mysql数据库安装（详细）_mysql安装_体会！的博客-CSDN博客</a></p>
+</li>
+<li><p><strong>安装 navicat：</strong><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kkdaj/p/16260681.html">Navicat Premium 16 永久破解激活 - 酷酷的阿杰 - 博客园 (cnblogs.com)</a></p>
+</li>
+<li><p><strong>启动 Mysql：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44691608/article/details/111772113">(59条消息) Express 实战: 连接 MySQL 数据库_超悠閒的博客-CSDN博客</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MySQL 目录下的 bin 目录中运行 net start mysql 启动服务器</span><br><span class="line">mysql -u root -p 之后输入密码</span><br><span class="line">修改密码：</span><br><span class="line">alter user &#x27;root&#x27;@&#x27;localhost&#x27; identified with mysql_native_password by &#x27;xxxxx&#x27;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>创建数组库、数据表、填充基本数据：</strong></p>
+<p>新建 express_mysql_db.sql 文件，统一创建数据库、数据表，并填充基本数据</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 创建空数据库</span><br><span class="line"><span class="keyword">DROP</span> DATABASE IF <span class="keyword">EXISTS</span> express_mysql_db;</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE express_mysql_db;</span><br><span class="line"></span><br><span class="line">USE express_mysql_db;</span><br><span class="line"></span><br><span class="line"># 创建 <span class="keyword">user</span> 表</span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `<span class="keyword">user</span>` (</span><br><span class="line">    `id` <span class="type">INT</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span> AUTO_INCREMENT,</span><br><span class="line">    `name` <span class="type">VARCHAR</span>(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    `password` <span class="type">VARCHAR</span>(<span class="number">255</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">    <span class="keyword">PRIMARY</span> KEY (`id`)</span><br><span class="line">)ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8;</span><br><span class="line"></span><br><span class="line"># 插入测试数据</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> <span class="keyword">user</span> (`name`, `password`) <span class="keyword">VALUES</span> (<span class="string">&#x27;xxx&#x27;</span>, <span class="string">&#x27;xxx&#x27;</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>导入数据：</strong>使用 .sql 文件将指令脚本化，在 mysql CLI 里面一键导入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt; <span class="built_in">source</span> xxxx/express_mysql_db.sql</span><br><span class="line">Query OK, 0 rows affected, 1 warning (0.00 sec)</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br><span class="line">Database changed</span><br><span class="line">Query OK, 0 rows affected, 2 warnings (0.01 sec)</span><br><span class="line">Query OK, 1 row affected (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; show tables;</span><br><span class="line">+----------------------------+</span><br><span class="line">| Tables_in_express_mysql_db |</span><br><span class="line">+----------------------------+</span><br><span class="line">| user                       |</span><br><span class="line">+----------------------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.01 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; show columns from user;</span><br><span class="line">+----------+--------------+------+-----+---------+----------------+</span><br><span class="line">| Field    | Type         | Null | Key | Default | Extra          |</span><br><span class="line">+----------+--------------+------+-----+---------+----------------+</span><br><span class="line">| <span class="built_in">id</span>       | int          | NO   | PRI | NULL    | auto_increment |</span><br><span class="line">| name     | varchar(255) | NO   |     | NULL    |                |</span><br><span class="line">| password | varchar(255) | NO   |     | NULL    |                |</span><br><span class="line">+----------+--------------+------+-----+---------+----------------+</span><br><span class="line">3 rows <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br><span class="line"></span><br><span class="line">mysql&gt; select * from user;</span><br><span class="line">+----+-------------+------------+</span><br><span class="line">| <span class="built_in">id</span> | name        | password   |</span><br><span class="line">+----+-------------+------------+</span><br><span class="line">|  1 | xxxxxxxxxxx | xxxxxxxxxx |</span><br><span class="line">+----+-------------+------------+</span><br><span class="line">1 row <span class="keyword">in</span> <span class="built_in">set</span> (0.00 sec)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="2-Vue-中实现-token-用户登录"><a href="#2-Vue-中实现-token-用户登录" class="headerlink" title="2. Vue 中实现 token 用户登录"></a>2. Vue 中实现 token 用户登录</h2><p>👉 <strong>参考：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_48255917/article/details/110622736?spm=1001.2014.3001.5506">(59条消息) vue获取token 实现token登录_vue token_小菜鸟学代码··的博客-CSDN博客</a></p>
+<ol>
+<li><p>在项目中使用 vuex 添加保存和删除 token 的全局方法</p>
+<ul>
+<li><p>index.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//引入Vuex</span></span><br><span class="line"><span class="keyword">import</span> &#123; createStore &#125; <span class="keyword">from</span> <span class="string">&#x27;vuex&#x27;</span></span><br><span class="line"><span class="keyword">import</span> state <span class="keyword">from</span> <span class="string">&#x27;./state&#x27;</span></span><br><span class="line"><span class="keyword">import</span> mutations <span class="keyword">from</span> <span class="string">&#x27;./mutations&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="title function_">createStore</span>(&#123;</span><br><span class="line">    state,</span><br><span class="line">    mutations,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>state.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="comment">// 登录认证，已登录isLogin: &#x27;1&#x27;，未登录 &#x27;0&#x27;</span></span><br><span class="line">    <span class="attr">isLogin</span>: <span class="string">&#x27;0&#x27;</span>, </span><br><span class="line">    <span class="attr">token</span>: <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;token&#x27;</span>) ? <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&#x27;token&#x27;</span>) : <span class="string">&#x27;&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>mutations.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    <span class="comment">// 设置存储token</span></span><br><span class="line">    <span class="title function_">setToken</span>(<span class="params">state, value</span>) &#123;</span><br><span class="line">        state.<span class="property">token</span> = value</span><br><span class="line">        state.<span class="property">isLogin</span> = <span class="string">&#x27;1&#x27;</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="variable language_">localStorage</span>.<span class="property">token</span> = value</span><br><span class="line">            <span class="variable language_">localStorage</span>.<span class="property">isLogin</span> = <span class="string">&#x27;1&#x27;</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 删除token</span></span><br><span class="line">    <span class="title function_">removeStorage</span>(<span class="params">state, value</span>) &#123;</span><br><span class="line">        state.<span class="property">isLogin</span> = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="variable language_">localStorage</span>.<span class="title function_">removeItem</span>(<span class="string">&#x27;token&#x27;</span>)</span><br><span class="line">            <span class="variable language_">localStorage</span>.<span class="property">isLogin</span> = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (error) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>在登录页面 (login.vue) 中登录方法调用接口成功后把 token 存储在本地存储中 localStorage。这里使用了 vant 组件库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">&lt;template lang=&quot;&quot;&gt;</span><br><span class="line">  &lt;div v-show=&quot;!Number(store.state.isLogin)&quot;&gt;</span><br><span class="line">    &lt;header class=&quot;title&quot;&gt;</span><br><span class="line">      登录</span><br><span class="line">      &lt;router-link to=&quot;/&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;iconfont header-back&quot;&gt;&amp;#xe624;&lt;/div&gt;</span><br><span class="line">      &lt;/router-link&gt;</span><br><span class="line">    &lt;/header&gt;</span><br><span class="line">    &lt;form action=&quot;./api/login&quot; method=&quot;post&quot;&gt;</span><br><span class="line">      &lt;van-field</span><br><span class="line">        class=&quot;tel&quot;</span><br><span class="line">        v-model=&quot;tel&quot;</span><br><span class="line">        type=&quot;tel&quot;</span><br><span class="line">        name=&quot;手机号&quot;</span><br><span class="line">        label=&quot;手机号&quot;</span><br><span class="line">        placeholder=&quot;注册或绑定手机号&quot;</span><br><span class="line">        :rules=&quot;[&#123; pattern, message: &#x27;请填写正确的手机号&#x27; &#125;]&quot;</span><br><span class="line">      /&gt;</span><br><span class="line">      &lt;van-field</span><br><span class="line">        class=&quot;password&quot;</span><br><span class="line">        v-model=&quot;password&quot;</span><br><span class="line">        type=&quot;password&quot;</span><br><span class="line">        name=&quot;密码&quot;</span><br><span class="line">        label=&quot;密码&quot;</span><br><span class="line">        placeholder=&quot;密码&quot;</span><br><span class="line">        :rules=&quot;[&#123; required: true, message: &#x27;请填写密码&#x27; &#125;]&quot;</span><br><span class="line">      /&gt;</span><br><span class="line">      &lt;div style=&quot;margin: 16px&quot;&gt;</span><br><span class="line">        &lt;van-button class=&quot;btn&quot; round block type=&quot;submit&quot; @click=&quot;onSubmit&quot;</span><br><span class="line">          &gt;登录/注册&lt;/van-button</span><br><span class="line">        &gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;!-- 这里通过isLogin判断页面显示为登录注册还是退出登录 --&gt;</span><br><span class="line">  &lt;div v-show=&quot;Number(store.state.isLogin)&quot;&gt;</span><br><span class="line">    &lt;header class=&quot;title&quot;&gt;</span><br><span class="line">      退出登录</span><br><span class="line">      &lt;router-link to=&quot;/&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;iconfont header-back&quot;&gt;&amp;#xe624;&lt;/div&gt;</span><br><span class="line">      &lt;/router-link&gt;</span><br><span class="line">    &lt;/header&gt;</span><br><span class="line">    &lt;div style=&quot;margin: 16px&quot;&gt;</span><br><span class="line">      &lt;van-button class=&quot;btn&quot; round block @click=&quot;onReturn&quot;</span><br><span class="line">        &gt;退出登录&lt;/van-button</span><br><span class="line">      &gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script setup&gt;</span><br><span class="line">import router from &quot;@/router&quot;;</span><br><span class="line">import store from &quot;@/store&quot;;</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line">import &#123; showSuccessToast, showFailToast &#125; from &quot;vant&quot;;</span><br><span class="line">import &#123; ref &#125; from &quot;vue&quot;;</span><br><span class="line">// 判断是不是电话号码</span><br><span class="line">const pattern = /^1[34578]\d&#123;9&#125;$/g;</span><br><span class="line">const tel = ref(&quot;&quot;);</span><br><span class="line">const password = ref(&quot;&quot;);</span><br><span class="line">// 登录函数</span><br><span class="line">const onSubmit = (values) =&gt; &#123;</span><br><span class="line">  // 预防一部分 XSS 攻击</span><br><span class="line">  password.value = password.value.replace(/&lt;/g, &quot;&amp;lt&quot;).replace(/&gt;/g, &quot;&amp;gt&quot;);</span><br><span class="line">  axios</span><br><span class="line">    .post(&quot;/api/login&quot;, &#123;</span><br><span class="line">      username: tel.value,</span><br><span class="line">      userPwd: password.value,</span><br><span class="line">    &#125;)</span><br><span class="line">    .then((res) =&gt; &#123;</span><br><span class="line">      if (res.data.status === 200) &#123;</span><br><span class="line">        store.commit(&quot;setToken&quot;, res.data.token);</span><br><span class="line">        showSuccessToast(res.data.message);</span><br><span class="line">        router.push(&#123; name: &quot;Home&quot; &#125;);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        showFailToast(res.data.message);</span><br><span class="line">        tel.value = &quot;&quot;;</span><br><span class="line">        password.value = &quot;&quot;;</span><br><span class="line">        router.push(&#123; name: &quot;Login&quot; &#125;);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch((err) =&gt; &#123;</span><br><span class="line">      showFailToast(err);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line">// 退出登录</span><br><span class="line">const onReturn = () =&gt; &#123;</span><br><span class="line">  confirm(&quot;退出登录？&quot;);</span><br><span class="line">  tel.value = &quot;&quot;;</span><br><span class="line">  password.value = &quot;&quot;;</span><br><span class="line">  store.commit(&quot;removeStorage&quot;); // 清除登录信息</span><br><span class="line">  router.push(&#123;</span><br><span class="line">    path: &quot;./login&quot;,</span><br><span class="line">  &#125;);</span><br><span class="line">  showSuccessToast(&quot;退出成功&quot;);</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style lang=&quot;stylus&quot; scoped&gt;</span><br><span class="line">@import &#x27;@/assets/styles/varibles.styl&#x27;</span><br><span class="line">.title</span><br><span class="line">    line-height: $headerHeight</span><br><span class="line">    background-color: $bgColor</span><br><span class="line">    color: #fff</span><br><span class="line">    text-align: center</span><br><span class="line">    .header-back</span><br><span class="line">        position: absolute</span><br><span class="line">        top: 0</span><br><span class="line">        left: 0</span><br><span class="line">        width: .64rem</span><br><span class="line">        text-align: center</span><br><span class="line">        font-size: .4rem</span><br><span class="line">        color: #fff</span><br><span class="line">.tel</span><br><span class="line">    margin-top: 0.2rem</span><br><span class="line">    padding: .3rem .5rem</span><br><span class="line">.password</span><br><span class="line">    padding: .3rem .5rem</span><br><span class="line">.btn</span><br><span class="line">    background-color: $bgColor</span><br><span class="line">    color: #fff</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在main.js中添加请求拦截器，并在请求头中添加token。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">router.<span class="title function_">beforeEach</span>(<span class="function">(<span class="params">to, <span class="keyword">from</span>, next</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (to.<span class="property">meta</span>.<span class="property">isAuth</span>) &#123; <span class="comment">// 需要登录</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="property">token</span> &amp;&amp; <span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="property">isLogin</span> === <span class="string">&#x27;1&#x27;</span>) &#123;</span><br><span class="line">            <span class="title function_">next</span>()</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (to.<span class="property">path</span> !== <span class="string">&#x27;/login&#x27;</span>) &#123;</span><br><span class="line">            <span class="keyword">let</span> token = <span class="variable language_">window</span>.<span class="property">localStorage</span>.<span class="property">token</span></span><br><span class="line">            <span class="keyword">if</span> (token === <span class="string">&#x27;null&#x27;</span> || token === <span class="string">&#x27;&#x27;</span> || token === <span class="literal">undefined</span>) &#123;</span><br><span class="line">                <span class="title function_">next</span>(&#123; <span class="attr">path</span>: <span class="string">&#x27;/login&#x27;</span> &#125;)</span><br><span class="line">                <span class="title function_">showFailToast</span>(<span class="string">&#x27;请登录后操作 &#x27;</span>)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="title function_">next</span>()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">// 不需要登录</span></span><br><span class="line">        <span class="title function_">next</span>()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//添加请求拦截器</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">request</span>.<span class="title function_">use</span>(</span><br><span class="line">    <span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 在发送请求之前做些什么，这里只对需要进行 token 鉴权的请求进行了请求拦截</span></span><br><span class="line">        <span class="keyword">if</span> (config.<span class="property">url</span> === <span class="string">&#x27;/api/detail.json&#x27;</span> &amp;&amp; store.<span class="property">state</span>.<span class="property">token</span>) &#123;</span><br><span class="line">            <span class="comment">// 给请求头加 token，配合后端的 express-jwt</span></span><br><span class="line">            config.<span class="property">headers</span>.<span class="property">Authorization</span> = <span class="string">&#x27;Bearer &#x27;</span> + store.<span class="property">state</span>.<span class="property">token</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> config;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 对请求错误做什么</span></span><br><span class="line">        <span class="keyword">return</span> <span class="title class_">Promise</span>.<span class="title function_">reject</span>(error);</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//http reponse响应拦截器</span></span><br><span class="line">axios.<span class="property">interceptors</span>.<span class="property">response</span>.<span class="title function_">use</span>(</span><br><span class="line">    <span class="function"><span class="params">response</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">// 2xx 范围内的状态码都会触发该函数。</span></span><br><span class="line">        <span class="comment">// 对响应数据做点什么</span></span><br><span class="line">        <span class="keyword">return</span> response;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="function"><span class="params">error</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (error.<span class="property">response</span>) &#123;</span><br><span class="line">            <span class="keyword">switch</span> (error.<span class="property">response</span>.<span class="property">status</span>) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="number">401</span>:</span><br><span class="line">                    <span class="variable language_">localStorage</span>.<span class="title function_">removeItem</span>(<span class="string">&#x27;token&#x27;</span>);</span><br><span class="line">                    router.<span class="title function_">replace</span>(&#123;</span><br><span class="line">                        <span class="attr">path</span>: <span class="string">&#x27;/login&#x27;</span>,</span><br><span class="line">                        <span class="attr">query</span>: &#123; <span class="attr">redirect</span>: router.<span class="property">currentRoute</span>.<span class="property">fullPath</span> &#125; <span class="comment">//登录成功后跳入浏览的当前页面</span></span><br><span class="line">                    &#125;)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>需要鉴权才能发送请求的组件，需要结合后端的响应对一些情况进行处理</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">&lt;script setup&gt;</span><br><span class="line">import &#123; ref&#125; from &quot;vue&quot;;</span><br><span class="line">import axios from &quot;axios&quot;;</span><br><span class="line">import &#123; useRoute &#125; from &quot;vue-router&quot;;</span><br><span class="line">import &#123; showSuccessToast, showFailToast &#125; from &quot;vant&quot;;</span><br><span class="line">import router from &quot;@/router&quot;;</span><br><span class="line">const sightName = ref(&quot;&quot;);</span><br><span class="line">const bannerImg = ref(&quot;&quot;);</span><br><span class="line">const gallaryImgs = reactive([]);</span><br><span class="line">const list = reactive([]);</span><br><span class="line"></span><br><span class="line">const route = useRoute(); // useRoute 传参 useRouter 控制路由变化</span><br><span class="line"></span><br><span class="line">const getDetailInfo = () =&gt; &#123;</span><br><span class="line">  axios</span><br><span class="line">    .get(&quot;/api/detail.json&quot;, &#123;</span><br><span class="line">      params: &#123;</span><br><span class="line">        id: route.params.id,</span><br><span class="line">      &#125;,</span><br><span class="line">    &#125;)</span><br><span class="line">    .then((res) =&gt; &#123;</span><br><span class="line">      const resData = res.data;</span><br><span class="line">      if (resData.status === 401) &#123;</span><br><span class="line">        // token 失效，跳转到登录页面重新登录</span><br><span class="line">        router.push(&#123;</span><br><span class="line">          name: &quot;Login&quot;,</span><br><span class="line">        &#125;);</span><br><span class="line">        // 错误提示（vant组件库）</span><br><span class="line">        showFailToast(resData.message);</span><br><span class="line">      &#125; else if (resData.status === 500) &#123;</span><br><span class="line">        // 其他类型错误，到主页  </span><br><span class="line">        router.push(&#123;</span><br><span class="line">          name: &quot;Home&quot;,</span><br><span class="line">        &#125;);</span><br><span class="line">        showFailToast(resData.message);</span><br><span class="line">      &#125; else &#123;</span><br><span class="line">        if (resData.ret &amp;&amp; resData.data) &#123;</span><br><span class="line">          const data = resData.data;</span><br><span class="line">          sightName.value = data.sightName;</span><br><span class="line">          bannerImg.value = data.bannerImg;</span><br><span class="line">          gallaryImgs.push(...data.gallaryImgs);</span><br><span class="line">          list.push(...data.categoryList);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch((err) =&gt; &#123;&#125;);</span><br><span class="line">&#125;;</span><br><span class="line">getDetailInfo();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="3-express-后端配置"><a href="#3-express-后端配置" class="headerlink" title="3. express 后端配置"></a>3. express 后端配置</h2><p>👉 <strong>参考：</strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/LLL3189860667/article/details/126645980">(59条消息) Nodejs使用jsonwebtoken生成token和express-jwt解析和校验token_node jsonwebtoken_一只花小妖的博客-CSDN博客</a></p>
+<ol>
+<li><p>安装需要的第三方包：jsonwebtoken（生成 jwt 字符串的包） 和 express-jwt（将客户端发送过来的 JWT 字符串，解析还原成 JSON 对象的包）</p>
+</li>
+<li><p>使用express创建一个基本的服务器</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">8000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;服务已经启动，8000端口监听中……&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导入 jsonwebtoken 和 express-jwt 第三方包，并创建一个密钥</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="comment">// 导入jsonwebtoken生成 jwt 字符串的包</span></span><br><span class="line"><span class="keyword">const</span> jsonwebtoken = <span class="built_in">require</span>(<span class="string">&#x27;jsonwebtoken&#x27;</span>)</span><br><span class="line"><span class="comment">// 将客户端发送过来的 JWT 字符串，解析还原成 JSON 对象的包</span></span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">expressjwt</span>: jwt &#125; = <span class="built_in">require</span>(<span class="string">&quot;express-jwt&quot;</span>)</span><br><span class="line"><span class="comment">// 创建密钥</span></span><br><span class="line"><span class="keyword">const</span> secretKey = <span class="string">&#x27;xxxxx&#x27;</span></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">8000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;服务已经启动，8000端口监听中……&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>连接数据库 <code>mysql.createConnection(options)</code></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="keyword">const</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>)</span><br><span class="line"><span class="comment">// 导入jsonwebtoken生成 jwt 字符串的包</span></span><br><span class="line"><span class="keyword">const</span> jsonwebtoken = <span class="built_in">require</span>(<span class="string">&#x27;jsonwebtoken&#x27;</span>)</span><br><span class="line"><span class="comment">// 将客户端发送过来的 JWT 字符串，解析还原成 JSON 对象的包</span></span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">expressjwt</span>: jwt &#125; = <span class="built_in">require</span>(<span class="string">&quot;express-jwt&quot;</span>)</span><br><span class="line"><span class="comment">// 创建密钥</span></span><br><span class="line"><span class="keyword">const</span> secretKey = <span class="string">&#x27;xxxxx&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置mysql</span></span><br><span class="line"><span class="keyword">var</span> options = &#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">    <span class="attr">port</span>: <span class="number">3306</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&#x27;_6119823jm*&#x27;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&#x27;express_mysql_db&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 连接数据库</span></span><br><span class="line"><span class="keyword">const</span> connection = mysql.<span class="title function_">createConnection</span>(options)</span><br><span class="line"><span class="comment">// 执行sql语句，注册时插入数据到表格</span></span><br><span class="line"><span class="keyword">var</span> add_sql = <span class="string">&#x27;insert into user(`name`, `password`) values(?, ?)&#x27;</span></span><br><span class="line"></span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">8000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;服务已经启动，8000端口监听中……&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>⭐ <strong>编写登录接口</strong></p>
+<ul>
+<li>查询数据库，根据电话号码判断用户是否已经注册</li>
+<li>如果没有注册，则在数据库中增加用户的信息，成功后 <strong><code>jwt.sign(&#123;用户信息&#125;，密钥，token有效时长)</code></strong> 生成 token， 并通过 res.send() 返回给客户端。<strong>注意：</strong>生成 token 的用户信息不要放敏感数据（密码等）</li>
+<li>如果用户已经注册，进一步判断用户的密码是否正确，密码错误则返回 {status: ‘400’,message: ‘密码错误’}</li>
+<li>密码正确则 jwt.sign({用户信息}，密钥，token有效时长) 生成 token， 并通过 res.send() 返回给客户端</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name = request.<span class="property">body</span>.<span class="property">username</span></span><br><span class="line">    <span class="keyword">let</span> password = request.<span class="property">body</span>.<span class="property">userPwd</span></span><br><span class="line">    <span class="keyword">let</span> userdata</span><br><span class="line">    connection.<span class="title function_">query</span>(<span class="string">`select * from user where name = <span class="subst">$&#123;name&#125;</span>`</span>, <span class="function">(<span class="params">err, users</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (err) &#123;</span><br><span class="line">            <span class="comment">// 查询异常</span></span><br><span class="line">            response.<span class="title function_">send</span>(<span class="string">&#x27;query error&#x27;</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 对查询到的数据库数据进行转换，方便下一步操作</span></span><br><span class="line">            userdata = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(users))</span><br><span class="line">            <span class="comment">// 判断用户是否已经注册</span></span><br><span class="line">            <span class="keyword">if</span> (!userdata.<span class="property">length</span>) &#123;</span><br><span class="line">                connection.<span class="title function_">query</span>(add_sql, [name, password], <span class="function">(<span class="params">err, users</span>) =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                        <span class="variable language_">console</span>.<span class="title function_">log</span>(err)</span><br><span class="line">                        <span class="comment">// 查询异常</span></span><br><span class="line">                        response.<span class="title function_">send</span>(<span class="string">&#x27;query error&#x27;</span>)</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        <span class="keyword">let</span> tokenStr = jsonwebtoken.<span class="title function_">sign</span>(&#123; name &#125;, secretKey, &#123; <span class="attr">expiresIn</span>: <span class="string">&#x27;2h&#x27;</span> &#125;)</span><br><span class="line">                        response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                            <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">                            <span class="attr">message</span>: <span class="string">&#x27;注册成功&#x27;</span>,</span><br><span class="line">                            <span class="attr">token</span>: tokenStr</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 判断密码是否正确</span></span><br><span class="line">                <span class="keyword">if</span> (userdata[<span class="number">0</span>].<span class="property">password</span> !== password) &#123;</span><br><span class="line">                    response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                        <span class="attr">status</span>: <span class="string">&#x27;400&#x27;</span>,</span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;密码错误&#x27;</span></span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">let</span> tokenStr = jsonwebtoken.<span class="title function_">sign</span>(&#123; name &#125;, secretKey, &#123; <span class="attr">expiresIn</span>: <span class="string">&#x27;2h&#x27;</span> &#125;)</span><br><span class="line">                    response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                        <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;登录成功&#x27;</span>,</span><br><span class="line">                        <span class="attr">token</span>: tokenStr</span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置中间件，通过 <strong><code>jwt(&#123; secret: secretKey, algorithms: [&quot;HS256&quot;] &#125;)</code></strong> 验证用户发过来的请求头的 token 是否有效。</p>
+<p><strong><code>unless(&#123; path: [&#39;/api/login&#39;, ... &#125;))</code></strong> 放置不需要 token 鉴权的请求路径，一定要包括 login。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将客户端发送过来的 jwt 字符串，解析还原成 JSON 对象的中间件 express-jwt</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">jwt</span>(&#123; <span class="attr">secret</span>: secretKey, <span class="attr">algorithms</span>: [<span class="string">&quot;HS256&quot;</span>] &#125;).<span class="title function_">unless</span>(&#123; <span class="attr">path</span>: [<span class="string">&#x27;/api/login&#x27;</span>, ...] &#125;))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>编写需要鉴权获取信息的接口</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/api/city.json&#x27;</span>, <span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 设置响应头 设置允许跨域</span></span><br><span class="line">    response.<span class="title function_">setHeader</span>(<span class="string">&#x27;Access-Control-Allow-Origin&#x27;</span>, <span class="string">&#x27;*&#x27;</span>)</span><br><span class="line">    response.<span class="title function_">send</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(<span class="title class_">City</span>))</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在所有路由之后，编写错误中间件，对错误情况进行处理，结合前端部分可以对情况进行处理</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">err, req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="comment">// token 错误</span></span><br><span class="line">    <span class="keyword">if</span> (err.<span class="property">name</span> === <span class="string">&#x27;UnauthorizedError&#x27;</span>) &#123;</span><br><span class="line">        res.<span class="title function_">send</span>(&#123;</span><br><span class="line">            <span class="attr">status</span>: <span class="number">401</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&#x27;无效的token&#x27;</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是其他位置原因导致的错误</span></span><br><span class="line">    res.<span class="title function_">send</span>(&#123;</span><br><span class="line">        <span class="attr">status</span>: <span class="number">500</span>,</span><br><span class="line">        <span class="attr">message</span>: <span class="string">&#x27;未知的错误&#x27;</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以将 vue 打包后的 dist 文件夹中内容，放到服务器文件中的 public 路径，并通过 static 中间件设置静态资源目录，运行服务器时，可以通过服务器端口访问整个项目。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">static</span>(path.<span class="title function_">resolve</span>(__dirname, <span class="string">&quot;public&quot;</span>)))</span><br></pre></td></tr></table></figure>
+
+<p><strong>server 文件夹结构：</strong></p>
+<p><img src="https://s2.loli.net/2023/04/25/8tEViwgNSKbFjZB.png" alt="image.png"></p>
+<p><strong>完整代码：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> express = <span class="built_in">require</span>(<span class="string">&#x27;express&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>)</span><br><span class="line"><span class="keyword">const</span> mysql = <span class="built_in">require</span>(<span class="string">&quot;mysql&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">express</span>()</span><br><span class="line"><span class="comment">// 导入jsonwebtoken生成 jwt 字符串的包</span></span><br><span class="line"><span class="keyword">const</span> jsonwebtoken = <span class="built_in">require</span>(<span class="string">&#x27;jsonwebtoken&#x27;</span>)</span><br><span class="line"><span class="comment">// 将客户端发送过来的 JWT 字符串，解析还原成 JSON 对象的包</span></span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">expressjwt</span>: jwt &#125; = <span class="built_in">require</span>(<span class="string">&quot;express-jwt&quot;</span>)</span><br><span class="line"><span class="comment">// 创建密钥</span></span><br><span class="line"><span class="keyword">const</span> secretKey = <span class="string">&#x27;xxxxx&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">Detail</span> = <span class="built_in">require</span>(path.<span class="title function_">resolve</span>(__dirname, <span class="string">&#x27;./api/detail.json&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置mysql</span></span><br><span class="line"><span class="keyword">var</span> options = &#123;</span><br><span class="line">    <span class="attr">host</span>: <span class="string">&#x27;localhost&#x27;</span>,</span><br><span class="line">    <span class="attr">port</span>: <span class="number">3306</span>,</span><br><span class="line">    <span class="attr">user</span>: <span class="string">&#x27;root&#x27;</span>,</span><br><span class="line">    <span class="attr">password</span>: <span class="string">&#x27;xxxxxxx&#x27;</span>,</span><br><span class="line">    <span class="attr">database</span>: <span class="string">&#x27;express_mysql_db&#x27;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 连接数据库</span></span><br><span class="line"><span class="keyword">const</span> connection = mysql.<span class="title function_">createConnection</span>(options)</span><br><span class="line"><span class="comment">// 执行sql语句，查询表格</span></span><br><span class="line"><span class="keyword">var</span> add_sql = <span class="string">&#x27;insert into user(`name`, `password`) values(?, ?)&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 解析的请求体的 req.body 属性</span></span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">json</span>())</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(express.<span class="title function_">static</span>(path.<span class="title function_">resolve</span>(__dirname, <span class="string">&quot;public&quot;</span>)))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将客户端发送过来的 jwt 字符串，解析还原成 JSON 对象的中间件 express-jwt</span></span><br><span class="line">app.<span class="title function_">use</span>(<span class="title function_">jwt</span>(&#123; <span class="attr">secret</span>: secretKey, <span class="attr">algorithms</span>: [<span class="string">&quot;HS256&quot;</span>] &#125;).<span class="title function_">unless</span>(&#123; <span class="attr">path</span>: [<span class="string">&#x27;/api/login&#x27;</span>, ...] &#125;))</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">get</span>(<span class="string">&#x27;/api/detail.json&#x27;</span>, <span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 设置响应头 设置允许跨域</span></span><br><span class="line">    response.<span class="title function_">setHeader</span>(<span class="string">&#x27;Access-Control-Allow-Origin&#x27;</span>, <span class="string">&#x27;*&#x27;</span>)</span><br><span class="line">    response.<span class="title function_">send</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(<span class="title class_">Detail</span>))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">post</span>(<span class="string">&#x27;/api/login&#x27;</span>, <span class="function">(<span class="params">request, response</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name = request.<span class="property">body</span>.<span class="property">username</span></span><br><span class="line">    <span class="keyword">let</span> password = request.<span class="property">body</span>.<span class="property">userPwd</span></span><br><span class="line">    <span class="keyword">let</span> userdata</span><br><span class="line">    connection.<span class="title function_">query</span>(<span class="string">`select * from user where name = <span class="subst">$&#123;name&#125;</span>`</span>, <span class="function">(<span class="params">err, users</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (err) &#123;</span><br><span class="line">            <span class="comment">// 查询异常</span></span><br><span class="line">            response.<span class="title function_">send</span>(<span class="string">&#x27;query error&#x27;</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            userdata = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(<span class="title class_">JSON</span>.<span class="title function_">stringify</span>(users))</span><br><span class="line">            <span class="comment">// 判断用户是否已经注册</span></span><br><span class="line">            <span class="keyword">if</span> (!userdata.<span class="property">length</span>) &#123;</span><br><span class="line">                connection.<span class="title function_">query</span>(add_sql, [name, password], <span class="function">(<span class="params">err, users</span>) =&gt;</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (err) &#123;</span><br><span class="line">                        <span class="variable language_">console</span>.<span class="title function_">log</span>(err)</span><br><span class="line">                        <span class="comment">// 查询异常</span></span><br><span class="line">                        response.<span class="title function_">send</span>(<span class="string">&#x27;query error&#x27;</span>)</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        <span class="keyword">let</span> tokenStr = jsonwebtoken.<span class="title function_">sign</span>(&#123; name &#125;, secretKey, &#123; <span class="attr">expiresIn</span>: <span class="string">&#x27;2h&#x27;</span> &#125;)</span><br><span class="line">                        response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                            <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">                            <span class="attr">message</span>: <span class="string">&#x27;注册成功&#x27;</span>,</span><br><span class="line">                            <span class="attr">token</span>: tokenStr</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">// 判断密码是否正确</span></span><br><span class="line">                <span class="keyword">if</span> (userdata[<span class="number">0</span>].<span class="property">password</span> !== password) &#123;</span><br><span class="line">                    response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                        <span class="attr">status</span>: <span class="string">&#x27;400&#x27;</span>,</span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;登录失败&#x27;</span></span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">let</span> tokenStr = jsonwebtoken.<span class="title function_">sign</span>(&#123; name &#125;, secretKey, &#123; <span class="attr">expiresIn</span>: <span class="string">&#x27;2h&#x27;</span> &#125;)</span><br><span class="line">                    response.<span class="title function_">send</span>(&#123;</span><br><span class="line">                        <span class="attr">status</span>: <span class="number">200</span>,</span><br><span class="line">                        <span class="attr">message</span>: <span class="string">&#x27;登录成功&#x27;</span>,</span><br><span class="line">                        <span class="attr">token</span>: tokenStr</span><br><span class="line">                    &#125;)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">use</span>(<span class="function">(<span class="params">err, req, res, next</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (err.<span class="property">name</span> === <span class="string">&#x27;UnauthorizedError&#x27;</span>) &#123;</span><br><span class="line">        res.<span class="title function_">send</span>(&#123;</span><br><span class="line">            <span class="attr">status</span>: <span class="number">401</span>,</span><br><span class="line">            <span class="attr">message</span>: <span class="string">&#x27;无效的token&#x27;</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 如果是其他位置原因导致的错误</span></span><br><span class="line">    res.<span class="title function_">send</span>(&#123;</span><br><span class="line">        <span class="attr">status</span>: <span class="number">500</span>,</span><br><span class="line">        <span class="attr">message</span>: <span class="string">&#x27;未知的错误&#x27;</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="title function_">next</span>()</span><br><span class="line">&#125;)</span><br><span class="line">app.<span class="title function_">listen</span>(<span class="number">8000</span>, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;服务已经启动，8000端口监听中……&quot;</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>待完善：人类行为验证……</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/04/23/%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Icon.png">
+      <meta itemprop="name" content="一二三三三三">
+      <meta itemprop="description" content="冲冲冲">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="三冬四夏">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/23/%E5%8E%9F%E5%9E%8B%E7%BB%A7%E6%89%BF/" class="post-title-link" itemprop="url">原型继承</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-04-23 16:27:18 / 修改时间：16:37:26" itemprop="dateCreated datePublished" datetime="2023-04-23T16:27:18+08:00">2023-04-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-原型链继承"><a href="#1-原型链继承" class="headerlink" title="1. 原型链继承"></a>1. 原型链继承</h2><p>💡 <strong>方式：</strong>将构造函数的实例赋值给原型对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;xuxiaotong&quot;</span>;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">color</span> = [<span class="string">&quot;red&quot;</span>,<span class="string">&quot;green&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 子类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = <span class="string">&quot;21&quot;</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 原型链继承</span></span><br><span class="line">subf.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> superf();<span class="comment">//subf继承了superf，通过原型，形成链条</span></span><br><span class="line"><span class="comment">// 子类实例</span></span><br><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">__proto__</span>.<span class="property">__proto__</span> === superf.<span class="property"><span class="keyword">prototype</span></span>) <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="title function_">isPrototypeOf</span>(test))  <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test <span class="keyword">instanceof</span> superf) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>❌ <strong>存在问题：</strong></p>
+<ol>
+<li><p><strong>引用共享：</strong>原型中包含的所有引用值会在所有实例间共享</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="property">color</span>.<span class="title function_">push</span>(<span class="string">&quot;balck&quot;</span>)</span><br><span class="line"><span class="keyword">var</span> test1 = <span class="keyword">new</span> <span class="title function_">subf</span>()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test1.<span class="property">color</span>) <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;, &#x27;balck&#x27; ] </span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>超类无法传参：</strong>子类在实例化时不能给父类的构造函数传参，无法在不影响所有对象实例的情况下把参数传进父类的构造函数中</p>
+</li>
+</ol>
+<h2 id="2-盗用构造函数"><a href="#2-盗用构造函数" class="headerlink" title="2. 盗用构造函数"></a>2. 盗用构造函数</h2><p>💡 <strong>方式：</strong>在子类构造函数中调用父类的构造函数，使用 <code>apply()</code>、<code>call()</code> 方法以新创建的对象为上下文执行构造函数</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父类构造函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">color</span> = [<span class="string">&quot;red&quot;</span>,<span class="string">&quot;green&quot;</span>]</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">sayColor</span> = <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">color</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 父类原型上的方法</span></span><br><span class="line">superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayName</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 子类</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params">name, age</span>) &#123;</span><br><span class="line">    superf.<span class="title function_">call</span>(<span class="variable language_">this</span>, name) <span class="comment">// 盗用构造函数</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>✅ <strong>优点：</strong></p>
+<ol>
+<li><p><strong>在子类实例化时可以向父类构造函数传参</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">age</span>)  <span class="comment">// 23</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="property">name</span>)  <span class="comment">// Tom</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>没有引用共享的问题：</strong> <code>superf.call(this, name)</code> 为子类的实例创建的新对象的上下文执行父类的初始化代码，每个实例都有自己的 color 属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="property">color</span>.<span class="title function_">push</span>(<span class="string">&quot;balck&quot;</span>)</span><br><span class="line"><span class="keyword">var</span> test1 = <span class="keyword">new</span> <span class="title function_">subf</span>()</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test1.<span class="property">color</span>) <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;] </span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>❌ <strong>存在问题：</strong></p>
+<ol>
+<li>必须在构造函数中定义方法，通过父类原型定义的方法无法被子类访问到，无法复用</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">test.<span class="title function_">sayColor</span>()   <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;, &#x27;balck&#x27; ]</span></span><br><span class="line">test1.<span class="title function_">sayColor</span>()  <span class="comment">// [ &#x27;red&#x27;, &#x27;green&#x27;] </span></span><br><span class="line"><span class="comment">// console.log(test.sayName())  // 子类实例对象调用父类原型上的方法报错</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-组合继承"><a href="#3-组合继承" class="headerlink" title="3. 组合继承"></a>3. 组合继承</h2><p>💡 <strong>方式：</strong></p>
+<ol>
+<li>在子类构造函数中调用父类的构造函数</li>
+<li>把父类的实例对象赋值给子类的原型对象</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">superf</span>(<span class="params">name</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span>= name</span><br><span class="line">&#125;</span><br><span class="line">superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">getName</span> = <span class="keyword">function</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="variable language_">this</span>.<span class="property">name</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 盗用构造函数继承父类构造函数上的属性和方法</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">subf</span>(<span class="params">name,age</span>) &#123;</span><br><span class="line">    superf.<span class="title function_">call</span>(<span class="variable language_">this</span>, name)</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 使用原型链继承父类原型上的属性和方法</span></span><br><span class="line">subf.<span class="property"><span class="keyword">prototype</span></span> = <span class="keyword">new</span> superf()</span><br><span class="line"><span class="keyword">var</span> test = <span class="keyword">new</span> <span class="title function_">subf</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test.<span class="title function_">getName</span>()) <span class="comment">// Tom</span></span><br></pre></td></tr></table></figure>
+
+<p>弥补了原型链继承和盗用构造函数的不足</p>
+<p><strong>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(superf.<span class="property"><span class="keyword">prototype</span></span>.<span class="title function_">isPrototypeOf</span>(test))  <span class="comment">// true</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(test <span class="keyword">instanceof</span> superf) <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+<p>❌ <strong>存在问题：</strong>调用了两次父类构造函数，存在效率问题</p>
+<h2 id="4-原型式继承"><a href="#4-原型式继承" class="headerlink" title="4. 原型式继承"></a>4. 原型式继承</h2><p>💡 <strong>方式：</strong></p>
+<ol>
+<li>创建一个临时构造函数</li>
+<li>将传入的对象赋值给这个构造函数的原型</li>
+<li>返回临时构造函数的一个实例</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">obj</span>(<span class="params">o</span>) &#123;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">F</span>(<span class="params"></span>)&#123;&#125;</span><br><span class="line">    F.<span class="property"><span class="keyword">prototype</span></span> = o</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title function_">F</span>()</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Tom&quot;</span>,</span><br><span class="line">    <span class="attr">hobby</span>: [<span class="string">&quot;sing&quot;</span>, <span class="string">&quot;dance&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person1 = <span class="title function_">obj</span>(person)</span><br><span class="line">person1.<span class="property">name</span> = <span class="string">&quot;Ami&quot;</span></span><br><span class="line">person1.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;swim&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> person2 = <span class="title function_">obj</span>(person)</span><br><span class="line">person2.<span class="property">name</span> = <span class="string">&quot;John&quot;</span></span><br><span class="line">person2.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;read&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>)  <span class="comment">// Tom</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">name</span>) <span class="comment">// Ami</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">name</span>) <span class="comment">// John</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">hobby</span>) <span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;, &#x27;read&#x27; ]</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>es5 通过 增加 <code>Object.create(obj[, &#123;新增的属性&#125;])</code> 方法将原型式继承的概念规范化了。</strong></p>
+<ol>
+<li><p>当只有一个参数时，<code>Object.create()</code> 跟 <code>obj()</code> 方法的效果相同</p>
+</li>
+<li><p><code>Object.create()</code> 第二个参数新增的属性会遮蔽原型上的同名属性</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person3 = <span class="title class_">Object</span>.<span class="title function_">create</span>(person, &#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;<span class="attr">value</span>:<span class="string">&quot;Samu&quot;</span>&#125;,</span><br><span class="line">&#125;)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person3.<span class="property">name</span>) <span class="comment">// Samu</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>✅ <strong>使用场景：</strong>有一个对象，想在已有对象的基础上创建一个新的对象</p>
+<p>❌ <strong>存在问题：</strong>引用共享问题，属性中包含的引用值始终会在相关对象空间中共享</p>
+<h2 id="5-寄生式继承"><a href="#5-寄生式继承" class="headerlink" title="5. 寄生式继承"></a>5. 寄生式继承</h2><p>💡 <strong>方式：</strong>创建一个实现继承的函数，以某种方式增强对象，然后返回对象</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">createAnother</span>(<span class="params">original</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> clone = <span class="title class_">Object</span>(original)  <span class="comment">// 1.调用函数创建一个新的对象</span></span><br><span class="line">    clone.<span class="property">sayHi</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;  <span class="comment">// 2. 增强对象</span></span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hi&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> clone</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person = &#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;Tom&quot;</span>,</span><br><span class="line">    <span class="attr">hobby</span>: [<span class="string">&quot;sing&quot;</span>, <span class="string">&quot;dance&quot;</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> person1 = <span class="title function_">createAnother</span>(person)</span><br><span class="line">person1.<span class="title function_">sayHi</span>()  <span class="comment">// Hi</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>这里调用函数创建一个新的对象不一定要通过 <code>Object(original)</code>，其他返回新对象的函数都可以</p>
+<p>✅ <strong>使用场景：</strong>适合主要关注对象，不在乎类型、构造函数的场景</p>
+<p>❌ <strong>存在问题：</strong></p>
+<ol>
+<li><p>引用共享</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> person2 = <span class="title function_">createAnother</span>(person)</span><br><span class="line">person1.<span class="property">hobby</span>.<span class="title function_">push</span>(<span class="string">&quot;swim&quot;</span>)</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27; ]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">hobby</span>)<span class="comment">// [ &#x27;sing&#x27;, &#x27;dance&#x27;, &#x27;swim&#x27;]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复用问题</p>
+</li>
+</ol>
+<h2 id="6-寄生式组合继承"><a href="#6-寄生式组合继承" class="headerlink" title="6. 寄生式组合继承"></a>6. 寄生式组合继承</h2><p>💡 <strong>方式：</strong></p>
+<ol>
+<li>盗用构造函数继承属性</li>
+<li>寄生式继承父类原型</li>
+<li>让返回的新对象赋值给子类的原型</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">SuperType</span>(<span class="params">name</span>)&#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = name;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">colors</span> = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;blue&quot;</span>, <span class="string">&quot;green&quot;</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">SuperType</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayName</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">name</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">SubType</span>(<span class="params">name, age</span>)&#123;</span><br><span class="line">    <span class="title class_">SuperType</span>.<span class="title function_">call</span>(<span class="variable language_">this</span>, name);  <span class="comment">//1. 盗用构造函数继承属性</span></span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">inheritPrototype</span>(<span class="params">subType, superType</span>)&#123;</span><br><span class="line">    <span class="comment">// 2. 寄生式继承父类原型</span></span><br><span class="line">    <span class="keyword">var</span> prototype = <span class="title class_">Object</span>(superType.<span class="property"><span class="keyword">prototype</span></span>); <span class="comment">// 创建父类原型的副本</span></span><br><span class="line">    prototype.<span class="property">constructor</span> = subType; <span class="comment">// 让副本的 constructor 属性指向子类</span></span><br><span class="line">    subType.<span class="property"><span class="keyword">prototype</span></span> = prototype; <span class="comment">// 让子类原型指向副本</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">inheritPrototype</span>(<span class="title class_">SubType</span>, <span class="title class_">SuperType</span>);<span class="comment">//实现继承</span></span><br><span class="line"><span class="title class_">SubType</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">sayAge</span> = <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="variable language_">this</span>.<span class="property">age</span>);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">let</span> test = <span class="keyword">new</span> <span class="title class_">SubType</span>(<span class="string">&quot;Tom&quot;</span>, <span class="number">23</span>)</span><br><span class="line">test.<span class="title function_">sayName</span>()  <span class="comment">// Tom </span></span><br></pre></td></tr></table></figure>
+
+<p>✅ <strong>优点：</strong></p>
+<ol>
+<li>解决了组合式继承两次调用构造函数的问题</li>
+<li>保留了 <code>instanceof</code> 操作符和 <code>isPrototypeOf()</code> 方法判断继承关系的能力</li>
+</ol>
+<p>✅ <strong>使用场景：</strong>引用类型继承的最佳模式</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="一二三三三三"
+      src="/images/Icon.png">
+  <p class="site-author-name" itemprop="name">一二三三三三</p>
+  <div class="site-description" itemprop="description">冲冲冲</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/mantou123333" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;mantou123333" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">一二三三三三</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider">|</span>
+<!-- 不蒜子计数初始值纠正 -->
+<script>
+$(document).ready(function() {
+
+    var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+    var countOffset = 20000;  // 初始化首次数据
+
+    function fixCount() {            
+       if (document.getElementById("busuanzi_container_site_pv").style.display != "none")
+        {
+            $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); 
+            clearInterval(int);
+        }                  
+        if ($("#busuanzi_container_site_pv").css("display") != "none")
+        {
+            $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
+            clearInterval(int); // 停止检测
+        }  
+    }
+       	
+});
+</script> 
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
